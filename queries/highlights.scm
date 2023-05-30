@@ -17,6 +17,7 @@
 (fixed_dimension) @punctuation.bracket ; the [3] in var[3]
 (dimension) @punctuation.bracket
 (array_indexed_access) @punctuation.bracket
+(parenthesized_expression) @punctuation.bracket ; ()'s used in expressions
 
 (sizeof_expression) @function.macro
 (view_as) @function.builtin
@@ -133,6 +134,7 @@
 
 [
   "public" ; public Plugin myinfo
+  "const"  ; const function parameters
 ] @storageclass
 
 [
